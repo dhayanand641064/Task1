@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_bkup extends AppCompatActivity {
     public Button result1;
     public Button option1;
     public Button option2;
@@ -94,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
                     option1.setTextColor(Color.parseColor("#FF0000"));
                     option1.setEnabled(false);
                     b = "option1";}
+                else{
+
+                }
 
             }
         });
@@ -109,29 +112,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         num1.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-                if (a!=null) {
-                    num1.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
+                num1.setText(a);
+                a = null;
+                count = count+1;
             }
         });
         num2.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-                if (a!=null) {
-                    num2.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
+                num2.setText(a);
+                a = null;
+                count = count+1;
             }
         });
         option3.setOnClickListener(new View.OnClickListener() {
@@ -178,6 +171,54 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        num3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                num3.setText(a);
+                a = null;
+                count = count+1;
+            }
+        });
+        num4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                num4.setText(a);
+                a = null;
+                count = count+1;
+            }
+        });
+        num5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                num5.setText(a);
+                a = null;
+                count = count+1;
+            }
+        });
+        num6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                num6.setText(a);
+                a = null;
+                count = count+1;
+            }
+        });
+        num7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                num7.setText(a);
+                a = null;
+                count = count+1;
+            }
+        });
+        num8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                num8.setText(a);
+                a = null;
+                count = count+1;
+            }
+        });
         option7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -185,6 +226,7 @@ public class MainActivity extends AppCompatActivity {
                     a = option7.getText().toString();
                     option7.setTextColor(Color.parseColor("#FF0000"));
                     option7.setEnabled(false);
+                    a = null;
                     b = "option7";
                 }
             }
@@ -196,91 +238,12 @@ public class MainActivity extends AppCompatActivity {
                     a = option8.getText().toString();
                     option8.setTextColor(Color.parseColor("#FF0000"));
                     option8.setEnabled(false);
+                    a = null;
                     b = "option8";
                 }
-            }
-        });
 
-        num3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (a!=null) {
-                    num3.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
             }
         });
-        num4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                if (a!=null) {
-                    num4.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
-            }
-        });
-        num5.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                if (a!=null) {
-                    num5.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
-            }
-        });
-        num6.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                if (a!=null) {
-                    num6.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
-            }
-        });
-        num7.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                if (a!=null) {
-                    num7.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
-            }
-        });
-        num8.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                if (a!=null) {
-                    num8.setText(a);
-                    a = null;
-                    count = count + 1;
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Please select an option", Toast.LENGTH_LONG).show();
-                    a = null;
-                }
-            }
-        });
-
 
 
         end.setOnClickListener(new View.OnClickListener() {
@@ -288,7 +251,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d("abcde"," coming here 123");
                 if(count<8 ){
-                    Toast.makeText(MainActivity.this,"Please fill all the values", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity_bkup.this,"Please fill all the values", Toast.LENGTH_LONG).show();
                 }
                 else if (Integer.parseInt((String) num1.getText())+Integer.parseInt((String) num2.getText()) == p+q & Integer.parseInt((String) num3.getText())-Integer.parseInt((String) num4.getText()) == p1-q1 & Integer.parseInt((String) num5.getText())*Integer.parseInt((String) num6.getText()) == p2*q2 & Integer.parseInt((String) num7.getText())%Integer.parseInt((String) num8.getText()) == p3%q3)
                 {
@@ -334,9 +297,9 @@ public class MainActivity extends AppCompatActivity {
                     option7.setEnabled(true);
                     option8.setEnabled(true);
 
-                }
+            }
                 else{
-                    Toast.makeText(MainActivity.this,"Ur ans is wrong,try again", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity_bkup.this,"Ur ans is wrong,try again", Toast.LENGTH_LONG).show();
                     r =r-1;
                     num1.setText(" ");
                     num2.setText(" ");
@@ -379,12 +342,12 @@ public class MainActivity extends AppCompatActivity {
                     option8.setEnabled(true);
 
                     if(r==0){
-                        Toast.makeText(MainActivity.this,"U lost all ur lives so start from first", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity_bkup.this,"U lost all ur lives so start from first", Toast.LENGTH_LONG).show();
                         Score.setText("0");
                         score = 0;
                         r=3;
                     }
                 }
-            }});
+        }});
     }
 }
